@@ -1,5 +1,5 @@
 #/bin/bash
 
-name=arun
+#name=arun
 
 echo "Name: $name"
