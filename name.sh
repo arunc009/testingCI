@@ -4,3 +4,4 @@
 
 echo "FirstName: Arun"
 echo "LastName: Singh"
+echo "Name: $name"
