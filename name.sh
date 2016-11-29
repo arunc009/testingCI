@@ -1,6 +1,6 @@
 #/bin/bash
 
-#name=arun
+name=arun
 
 echo "FirstName: Arun"
 echo "LastName: Singh"
