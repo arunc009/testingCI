@@ -1,3 +1,12 @@
 #!/bin/bash
-yum install -y httpd
+#yum install -y httpd
+
+say=`uname -a | awk '{print $3;}' | grep amzn`
+
+if [[ $say == '' ]]; then
+        sudo apt-get install apache2 -y 
+else
+        yum install httpd -y
+fi
+
 
