@@ -1,5 +1,4 @@
 #!/bin/bash
-#yum install -y httpd
 
 say=`uname -a | awk '{print $3;}' | grep amzn`
 
