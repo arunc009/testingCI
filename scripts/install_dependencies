@@ -3,9 +3,9 @@
 say=`uname -a | awk '{print $3;}' | grep amzn`
 
 if [[ $say == '' ]]; then
-        sudo apt-get install apache2 -y 
+        sudo apt-get install apache2 -y && rm /var/www/html/index.html
 else
-        yum install httpd -y
+        yum install httpd -y && rm /var/www/html/index.html
 fi
 
 
