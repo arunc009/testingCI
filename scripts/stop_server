@@ -1,6 +1,10 @@
 #!/bin/bash
-isExistApp = `pgrep httpd`
+isExisthttpd = `pgrep httpd`
 if [[ -n  $isExistApp ]]; then
     service httpd stop        
 fi
 
+isExistapache2 = `pgrep apache2`
+if [[ -n  $isExistapache2 ]]; then
+    service apache2 stop        
+fi

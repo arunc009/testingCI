@@ -1,3 +1,11 @@
 #!/bin/bash
-service httpd start
+
+say=`uname -a | awk '{print $3;}' | grep amzn`
+
+if [[ $say == '' ]]; then
+        service apache2 start
+else
+        service httpd start
+fi
+
 
